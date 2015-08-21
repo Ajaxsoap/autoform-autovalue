@@ -1,0 +1,11 @@
+<head>
+  <title>Calculate age</title>
+</head>
+
+<body>
+  {{> form}}
+</body>
+
+<template name="form">
+    {{> quickForm fields='birthdate,myAge' collection="Age" id="insertAgeForm" type='insert' buttonContent="Calculate Age"}}
+</template>
